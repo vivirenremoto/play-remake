@@ -1,0 +1,32 @@
+{
+    "name": "Play remake",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Show google play as google results",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_title": "Visit project website"
+    },
+    "background": {
+        "scripts": [
+            "action.js"
+        ]
+    },
+    "permissions": [
+        "https://play.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://play.google.com/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ]
+}
