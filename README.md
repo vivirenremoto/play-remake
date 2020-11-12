@@ -1,3 +1,3 @@
 # play-remake
 
-[website](https://vivirenremoto.github.io/play_remake/index.html)
+[website](https://vivirenremoto.github.io/play-remake/index.html)
